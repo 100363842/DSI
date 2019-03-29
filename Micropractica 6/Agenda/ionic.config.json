@@ -1,0 +1,8 @@
+{
+  "name": "Agenda",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "c0621d1c"
+}
