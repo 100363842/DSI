@@ -1,0 +1,8 @@
+{
+  "name": "Medicitas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "8a4b8505"
+}
