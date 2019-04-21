@@ -10,12 +10,12 @@
 <ion-content padding id="body">
   <p>Citas en tiempo real</p>
   <div id="timeTable">
-    <ng-container *ngFor='let finishedAppointment of appointments'>
-        <p class="finishedAppointment" *ngIf='finishedAppointment.finished == 1'>{{finishedAppointment.time}}</p>
+    <ng-container *ngFor='let finishedAppointment of finishedAppointments'>
+        <p class="finishedAppointment" [style.color]="getColor(finishedAppointment.securityNumber)">{{finishedAppointment.time}}</p>
     </ng-container>
-    <ng-container *ngFor='let remainingAppointment of appointments'>
-        <p class="remainingAppointment" *ngIf='remainingAppointment.finished == 0 && isToday(remainingAppointment.date)'>{{remainingAppointment.time}}</p>
+    <ng-container *ngFor='let remainingAppointment of remainingAppointments'>
+        <p class="remainingAppointment" *ngIf='isToday(remainingAppointment.date)' [style.color]="getColor(remainingAppointment.securityNumber)">{{remainingAppointment.time}}</p>
     </ng-container>
   </div>
-    <p>Tu cita tiene aproximadamente 20 minutos de retraso</p>
+  <p><span>Tu cita</span> tiene aproximadamente 20 minutos de retraso.</p>
 </ion-content>

@@ -8,6 +8,8 @@ import { AppointmentPage } from '../pages/appointment/appointment';
 import { DoctorPage } from '../pages/doctor/doctor';
 import { PatientOptionsPage } from '../pages/patient-options/patient-options';
 import { TimeTablePage } from '../pages/time-table/time-table';
+import { SignInPatientPage } from '../pages/sign-in-patient/sign-in-patient';
+import { SignInDoctorPage } from '../pages/sign-in-doctor/sign-in-doctor';
 
 @Component({
   templateUrl: 'app.html'
@@ -29,6 +31,8 @@ export class MyApp {
       { title: 'DoctorPage', component: DoctorPage },
       { title: 'PatientOptionsPage', component: PatientOptionsPage },
       { title: 'TimeTablePage', component: TimeTablePage },
+      { title: 'SignInPatientPage', component: SignInPatientPage },
+      { title: 'SignInDoctorPage', component: SignInDoctorPage },
     ];
 
   }

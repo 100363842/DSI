@@ -13,10 +13,10 @@ export class PatientOptionsPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   goToAppointmentPage(){
-    this.navCtrl.push(AppointmentPage);
+    this.navCtrl.push(AppointmentPage, {'securityNumber': this.navParams.get('securityNumber')});
   }
   goToTimeTablePage(){
-    this.navCtrl.push(TimeTablePage);
+    this.navCtrl.push(TimeTablePage, {'securityNumber': this.navParams.get('securityNumber')});
   }
   goBack(){
     this.navCtrl.pop();
